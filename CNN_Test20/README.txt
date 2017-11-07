@@ -1,0 +1,1 @@
+CNNLayer PILELINEプラグマ対応

@@ -1,0 +1,23 @@
+(c) Copyright 2012-2017 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2017.2 SW Build 1972098 on Wed Aug 23 11:35:17 MDT 2017
+# Start time    : Wed Sep 13 08:51:59 JST 2017
+# Command line  : sds++ -o CNN_Test0.elf ./src/bitmap.o ./src/cnn.o ./src/cnn_main.o ./src/common.o ./src/perceptron.o -dmclkid 1 -sds-sys-config linux -sds-proc a9_0 -sds-pf zed
+# Log file      : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test0/Debug/_sds/reports/sds.log
+# Journal file  : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test0/Debug/_sds/reports/sds.jou
+# Report file   : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test0/Debug/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+-------------------
+Data Motion Network
+-------------------
+
+Data motion network report generated in /home/h-ishihara/workspace/SDSoC_Test/CNN_Test0/Debug/_sds/reports
+
+-------------------
+Design Utilization
+-------------------
+
+  Partition 0
+  Utilization Summary : file not found : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test0/Debug/_sds/p0/_vpl/ipi/ipiimpl/ipiimpl.runs/impl_1/*_utilization_placed.rpt
+

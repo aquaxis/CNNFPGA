@@ -1,0 +1,223 @@
+(c) Copyright 2012-2017 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sdscc 2017.2 SW Build 1972098 on Wed Aug 23 11:35:17 MDT 2017
+# Start time    : Wed Sep 13 08:52:06 JST 2017
+# Command line  : sdscc -Wall -O0 -g -I../src -c -fmessage-length=0 -MTsrc/cnn.o -MMD -MP -MFsrc/cnn.d -MTsrc/cnn.o -o src/cnn.o ../src/cnn.c -sds-hw CalcConvolution cnn.c -clkid 2 -sds-end -sds-sys-config linux -sds-proc a9_0 -sds-pf zed
+# Log file      : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test1/Debug/_sds/reports/sds_cnn.log
+# Journal file  : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test1/Debug/_sds/reports/sds_cnn.jou
+# Report file   : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test1/Debug/_sds/reports/sds_cnn.rpt
+#-----------------------------------------------------------
+
+High-Level Synthesis
+--------------------
+
+  Vivado HLS Report : /home/h-ishihara/workspace/SDSoC_Test/CNN_Test1/Debug/_sds/vhls/CalcConvolution/solution/syn/report/CalcConvolution_csynth.rpt
+
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.30|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 1.1.1  |    ?|    ?|        17|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      2|       -|      -|
+|Expression       |        -|      0|       0|    660|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|     14|    1102|   2196|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    198|
+|Register         |        -|      -|     785|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     16|    1887|   3054|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      7|       1|      5|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF |  LUT |
+    +-------------------------+----------------------+---------+-------+-----+------+
+    |CalcConvolution_dbkb_U1  |CalcConvolution_dbkb  |        0|      3|  630|  1141|
+    |CalcConvolution_dcud_U2  |CalcConvolution_dcud  |        0|     11|  342|   586|
+    |CalcConvolution_ddEe_U3  |CalcConvolution_ddEe  |        0|      0|  130|   469|
+    +-------------------------+----------------------+---------+-------+-----+------+
+    |Total                    |                      |        0|     14| 1102|  2196|
+    +-------------------------+----------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    +-------------------------+----------------------+-----------+
+    |         Instance        |        Module        | Expression|
+    +-------------------------+----------------------+-----------+
+    |CalcConvolution_meOg_U4  |CalcConvolution_meOg  |  i0 * i1  |
+    |CalcConvolution_meOg_U5  |CalcConvolution_meOg  |  i0 * i1  |
+    +-------------------------+----------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |tmp_6_fu_330_p2     |     *    |      0|  0|  51|           9|           9|
+    |d_1_fu_291_p2       |     +    |      0|  0|  38|           1|          31|
+    |m_1_fu_348_p2       |     +    |      0|  0|  39|           1|          32|
+    |n_1_fu_314_p2       |     +    |      0|  0|  38|           1|          31|
+    |sum1_fu_369_p2      |     +    |      0|  0|  16|           9|           9|
+    |sum4_fu_359_p2      |     +    |      0|  0|  15|          15|          15|
+    |tmp1_fu_249_p2      |     +    |      0|  0|  22|          15|          15|
+    |tmp3_fu_320_p2      |     +    |      0|  0|  15|          15|          15|
+    |tmp4_fu_267_p2      |     +    |      0|  0|  22|          15|          15|
+    |tmp5_fu_354_p2      |     +    |      0|  0|  15|          15|          15|
+    |tmp_fu_325_p2       |     +    |      0|  0|  15|          15|          15|
+    |p_neg_fu_201_p2     |     -    |      0|  0|  39|           1|          32|
+    |tmp_5_fu_227_p2     |     -    |      0|  0|  22|           1|          15|
+    |tmp_11_fu_419_p2    |    and   |      0|  0|   8|           1|           1|
+    |tmp_16_fu_467_p2    |    and   |      0|  0|   8|           1|           1|
+    |exitcond_fu_343_p2  |   icmp   |      0|  0|  18|          32|          32|
+    |notlhs1_fu_449_p2   |   icmp   |      0|  0|  13|          11|           2|
+    |notlhs_fu_401_p2    |   icmp   |      0|  0|  13|          11|           2|
+    |notrhs1_fu_455_p2   |   icmp   |      0|  0|  29|          52|           1|
+    |notrhs_fu_407_p2    |   icmp   |      0|  0|  29|          52|           1|
+    |tmp_1_fu_286_p2     |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_4_fu_309_p2     |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_13_fu_461_p2    |    or    |      0|  0|   8|           1|           1|
+    |tmp_s_fu_413_p2     |    or    |      0|  0|   8|           1|           1|
+    |ap_return           |  select  |      0|  0|  64|           1|          62|
+    |sum_3_fu_424_p3     |  select  |      0|  0|  64|           1|           1|
+    |tmp_7_fu_233_p3     |  select  |      0|  0|  15|           1|          15|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0| 660|         342|         433|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+-----+-----------+-----+-----------+
+    |        Name       | LUT | Input Size| Bits| Total Bits|
+    +-------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm          |  117|         25|    1|         25|
+    |d_reg_136          |    9|          2|   31|         62|
+    |grp_fu_177_opcode  |   15|          3|    5|         15|
+    |grp_fu_177_p0      |   15|          3|   64|        192|
+    |grp_fu_177_p1      |   15|          3|   64|        192|
+    |m_reg_158          |    9|          2|   32|         64|
+    |n_reg_147          |    9|          2|   31|         62|
+    |sum_fu_72          |    9|          2|   64|        128|
+    +-------------------+-----+-----------+-----+-----------+
+    |Total              |  198|         42|  292|        740|
+    +-------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |  24|   0|   24|          0|
+    |d_1_reg_534              |  31|   0|   31|          0|
+    |d_reg_136                |  31|   0|   31|          0|
+    |filter_load_reg_595      |  64|   0|   64|          0|
+    |input_data_load_reg_590  |  64|   0|   64|          0|
+    |m_1_reg_575              |  32|   0|   32|          0|
+    |m_reg_158                |  32|   0|   32|          0|
+    |n_1_reg_552              |  31|   0|   31|          0|
+    |n_reg_147                |  31|   0|   31|          0|
+    |offset_reg_539           |  15|   0|   15|          0|
+    |reg_188                  |  64|   0|   64|          0|
+    |sum_1_reg_605            |  64|   0|   64|          0|
+    |sum_3_reg_610            |  64|   0|   64|          0|
+    |sum_fu_72                |  64|   0|   64|          0|
+    |tmp1_reg_511             |  15|   0|   15|          0|
+    |tmp2_reg_567             |  15|   0|   15|          0|
+    |tmp4_reg_526             |  15|   0|   15|          0|
+    |tmp_10_reg_544           |   1|   0|    1|          0|
+    |tmp_15_reg_617           |   1|   0|    1|          0|
+    |tmp_18_reg_506           |  15|   0|   15|          0|
+    |tmp_20_reg_516           |  15|   0|   15|          0|
+    |tmp_21_reg_521           |   9|   0|    9|          0|
+    |tmp_6_reg_562            |   9|   0|    9|          0|
+    |tmp_8_reg_600            |  64|   0|   64|          0|
+    |tmp_reg_557              |  15|   0|   15|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 785|   0|  785|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-----------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_rst_n           |  in |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_start           |  in |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_done            | out |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_idle            | out |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_ready           | out |    1| ap_ctrl_hs | CalcConvolution | return value |
+|ap_return          | out |   64| ap_ctrl_hs | CalcConvolution | return value |
+|filter_Addr_A      | out |   32|    bram    |      filter     |     array    |
+|filter_EN_A        | out |    1|    bram    |      filter     |     array    |
+|filter_WEN_A       | out |    8|    bram    |      filter     |     array    |
+|filter_Din_A       | out |   64|    bram    |      filter     |     array    |
+|filter_Dout_A      |  in |   64|    bram    |      filter     |     array    |
+|filter_Clk_A       | out |    1|    bram    |      filter     |     array    |
+|filter_Rst_A       | out |    1|    bram    |      filter     |     array    |
+|filter_size        |  in |   32|   ap_none  |   filter_size   |    scalar    |
+|input_data_Addr_A  | out |   32|    bram    |    input_data   |     array    |
+|input_data_EN_A    | out |    1|    bram    |    input_data   |     array    |
+|input_data_WEN_A   | out |    8|    bram    |    input_data   |     array    |
+|input_data_Din_A   | out |   64|    bram    |    input_data   |     array    |
+|input_data_Dout_A  |  in |   64|    bram    |    input_data   |     array    |
+|input_data_Clk_A   | out |    1|    bram    |    input_data   |     array    |
+|input_data_Rst_A   | out |    1|    bram    |    input_data   |     array    |
+|input_width        |  in |   32|   ap_none  |   input_width   |    scalar    |
+|input_height       |  in |   32|   ap_none  |   input_height  |    scalar    |
+|input_depth        |  in |   32|   ap_none  |   input_depth   |    scalar    |
+|x                  |  in |   32|   ap_none  |        x        |    scalar    |
+|y                  |  in |   32|   ap_none  |        y        |    scalar    |
++-------------------+-----+-----+------------+-----------------+--------------+
+

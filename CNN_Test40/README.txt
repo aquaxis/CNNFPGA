@@ -1,0 +1,1 @@
+Convolution関数をエミュレート

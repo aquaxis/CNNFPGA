@@ -1,0 +1,1 @@
+execCNN2、全展開でFPGA化

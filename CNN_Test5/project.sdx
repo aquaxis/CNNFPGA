@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="CNN_Test5" location="/home/hidemi/workspace/SDSoC_Test/CNN_Test5" platform="xilinx.com:zed:zed:1.0" sysConfig="linux" runtime="C/C++" cpu="a9_0" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.1814033251">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false">
+      <accelerator name="CNNLayer" filepath="src/cnn.c" clkid="2" location="/home/h-ishihara/workspace/SDSoC_Test/CNN_Test5/src/cnn.c"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false" genEmulationModel="false">
+      <accelerator name="CNNLayer" filepath="src/cnn.c" clkid="2" location="/home/h-ishihara/workspace/SDSoC_Test/CNN_Test5/src/cnn.c"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.1420074376">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+</sdsproject:SDSProject>

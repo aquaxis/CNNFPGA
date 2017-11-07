@@ -1,0 +1,10 @@
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/6.2.1=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/6.2.1/arm-linux-gnueabihf=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/6.2.1/backward=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/6.2.1/include=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/SDK/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/6.2.1/include-fixed=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/Vivado_HLS/include=false
+//showInclude\:/work/opt/Xilinx/SDx/2017.2/target/aarch32-linux/include=false
+eclipse.preferences.version=1
