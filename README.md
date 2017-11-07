@@ -5,7 +5,7 @@
 次のようにリポジトリをクローン又はダウンロードしてください。
 
 ```text
-git clone git://github.com/SDSoC_Test
+git clone git://github.com/CNNFPGA
 ```
 
 SDSoCを起動します。
@@ -16,7 +16,7 @@ SDSoC起動時にワーキングスペースをクローンしたフォルダに
  * 起動時に「Select a directory as workspace」ダイアログが表示さずにSDSoCが起動した場合は、[File]-[Switch Workspace]-[Other...]を選択し、下記のワークスペースを指定します。
 
 ```text
-/home/hoge/SDSoC_Test
+/home/hoge/CNNFPGA
 ```
 
 最初はSDSoCの「Project Explorer」には何もプロジェクトが表示されていませので[File]-[Open Projects from File Systems...]を選択し、「Import Projects from File System or Archive」ダイアログで「Import source」を上記のフォルダに指定します。
