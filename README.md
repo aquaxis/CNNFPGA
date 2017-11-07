@@ -13,7 +13,7 @@ SDSoCを起動します。
 SDSoC起動時にワーキングスペースをクローンしたフォルダにします。
 
  * 起動時に「Select a directory as workspace」ダイアログが表示される場合はここの「Workspace」に下記のフォルダを指定します。
- * 起動時に「Select a directory as workspace」ダイアログが表示さずにSDSoCが起動した場合は、[File]-[Switch Workspace]-[Other...]を選択し、下記のワークスペースを指定します。
+ * 起動時に「Select a directory as workspace」ダイアログが表示さずにSDSoCが起動した場合は、[File]-[Switch Workspace]-[Other...]を選択し、下記のようにワークスペースを指定します。
 
 ```text
 /home/hoge/CNNFPGA
